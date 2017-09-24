@@ -1,0 +1,24 @@
+
+// for cookie content
+.gl-cookie { z-index: 200; position: fixed; bottom: 0; left: 0; width: 100%; background: rgba(0,191,243,0.8); box-shadow: 0 0 15px rgba(0,191,243,1); color: $coWhite; @extend .bp-box, .ease; overflow: visible !important; @include transform(translateY(100%));
+  &.show { @include transform(translateY(0)); }
+  .auto { max-width: 1300px; padding: 15px 15px 15px 220px; }
+  .h-b-btn { margin: 0 4px; padding: 10px 20px; color: $coWhite !important; border-color: $coWhite !important;
+    &:first-child { margin-left: 0; }
+    &:last-child { margin-right: 0; }
+    &.short { min-width: 170px; }
+    &:hover { background-color: $coWhite !important; color: rgba(0,191,243,1) !important; border-color: $coWhite !important; }
+  }
+  .gl-co-button { border:1px solid #fff; text-align:center; font-size:14px; margin-top:10px }
+
+  @include breakpoint(laptop) {
+    .gl-co-capt { float: none; max-width: 100%; }
+    .gl-co-button { float: none; display: inline-block; }
+  };
+
+  @include breakpoint(phablet) {
+    .gl-co-img { width: 150px; bottom: auto; top: -97px; }
+    .gl-co-capt { max-width: 100%; }
+    .auto { padding-left: 15px; }
+  };
+}

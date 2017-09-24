@@ -1,0 +1,11 @@
+// ionclude all your related style here in the footer, you can leave it empty if the page has no footer
+footer { z-index: 2; position: relative;
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+  color: $coBlack;
+  border-top: 2px solid $coLtGreen;
+  border-bottom: 5px solid $coLtGreen;
+  background: rgba($coWhite, 0.5);
+  p { margin: 0 auto; }
+}
